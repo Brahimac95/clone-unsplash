@@ -1,4 +1,3 @@
-import { ID } from "./key.js";
 const imagesList = document.querySelector(".images-list");
 const errorMsg= document.querySelector(".error-msg");
 let searchQuery = "random";
@@ -9,7 +8,7 @@ const reload = document.querySelector('a')
 // Fonction de recupération de données (Photos)
 async function fetchData(){
   try{
-    const response = await fetch(`https://api.unsplash.com/search/photos?page=${pageIndex}&per_page=30&query=${searchQuery}&client_id=${ID}`)
+    const response = await fetch(`https://api.unsplash.com/search/photos?page=${pageIndex}&per_page=30&query=${searchQuery}&client_id=ZwfCpBR-6Se7MK5h7ZIFfONdFu1iAW4dXLL56vEZnZU`)
 
     if(!response.ok){
       throw new Error(`Erreur: ${response.status}`)
